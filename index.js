@@ -14,7 +14,7 @@ const app=express();
 dotEnv.config();
 connectDB();
 
-const PORT=4000;
+const PORT=process.env.port || 4000;
 
 app.use(bodyParser.json());
 
