@@ -12,6 +12,6 @@ router.get('/uploads/:imageName',(req,res)=>{
     res.sendFile(path.join(__dirname,'..','uploads',imageName));
 });
 
-router.delete(':/productId',productController.deleteProductById);
+router.delete('/:productId',productController.deleteProductById);
 
 module.exports=router
