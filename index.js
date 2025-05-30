@@ -14,10 +14,7 @@ const app=express();
 
 dotEnv.config();
 connectDB();
-app.use(cors({
-  origin: 'https://multi-vendor-frontend.netlify.app',
-  credentials: true // only if you're sending cookies or auth headers
-}));
+app.use(cors());
 
 const PORT=process.env.port || 4000;
 
